@@ -12,6 +12,7 @@ export const FETCH_CHARS = "FETCH_CHARS";
 export const FETCH_GOOD = "FETCH_GOOD";
 export const FETCH_FAIL = "FETCH_FAIL";
 
+
 export const getChars = () => dispatch => {
   dispatch({type: FETCH_CHARS});
 
@@ -20,7 +21,8 @@ export const getChars = () => dispatch => {
     .then (res =>{
       dispatch({
         type: FETCH_GOOD,
-        payload: res.data
+        // NO   payload: res.data
+        payload: res.data.results   // YES !!!!!!!!
       })
     })
     .catch(err => {

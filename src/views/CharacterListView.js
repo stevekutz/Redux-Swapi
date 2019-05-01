@@ -7,10 +7,10 @@ import { CharacterList } from "../components";
 import {getChars} from "../actions";
 
 class CharacterListView extends React.Component {
-  constructor() {
+ /* constructor() {
     super();
   }
-
+*/
   componentDidMount() {
     // call our action
     this.props.getChars();

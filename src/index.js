@@ -18,7 +18,9 @@ const store = createStore(
 );
 */
 
-import { logger } from "./logger";
+// import { logger } from "./logger";
+
+import logger from 'redux-logger';
 import thunk from "redux-thunk";
 import { applyMiddleware, createStore, compose } from "redux";
 const composeEnhancers =

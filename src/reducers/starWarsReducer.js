@@ -5,9 +5,7 @@ export const FETCH_GOOD = "FETCH_GOOD";
 export const FETCH_FAIL = "FETCH_FAIL";
  */
 
-import FETCH_CHARS from '../actions';
-import FETCH_GOOD from '../actions';
-import FETCH_FAIL from '../actions';
+import {FETCH_CHARS, FETCH_GOOD, FETCH_FAIL} from '../actions';
 
 const initialState = {
   characters: [],

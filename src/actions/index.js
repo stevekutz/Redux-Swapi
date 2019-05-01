@@ -13,7 +13,7 @@ export const FETCH_GOOD = "FETCH_GOOD";
 export const FETCH_FAIL = "FETCH_FAIL";
 
 export const getChars = () => dispatch => {
-  dispatch({type: FETCH_CHARS})
+  dispatch({type: FETCH_CHARS});
 
   axios
     .get (`https://swapi.co/api/people/`)
